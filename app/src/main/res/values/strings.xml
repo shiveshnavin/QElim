@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">QQuit</string>
+    <string name="app_name_n">QElim</string>
+    <string name="facebook_app_id">344535542544786</string>
+
+
+    <string name="article_detail_more_info">More Info</string>
+
+
+    <string name="server">http://www.varrange4u.com</string>
+    <string name="server2">http://www.thehoproject.co.nf/</string>
+    <string name="website">http://lamp-restaurant.co.uk/</string>
+
+
+    <string name="flavour">Menu</string>
+    <string name="book">Booking</string>
+    <string name="about">About Us</string>
+    <string name="wallet">My Wallet</string>
+    <string name="contact">Contact Us</string>
+    <string name="logout">Logout</string>
+
+    <string name="samples_title">Hello title</string>
+    <string name="samples_subhead">Hello Subhead</string>
+    <string name="samples_hint_username">Username</string>
+    <string name="samples_hint_email">E-Mail</string>
+
+
+    <string name="navigation_title">Guest</string>
+    <string name="navigation_quotes">Flavours</string>
+    <string name="navigation_samples">Occasions</string>
+    <string name="navigation_settings">Account</string>
+    <string name="navigation_sub_items">Sub items</string>
+    <string name="navigation_dummy_item_1">Dummy item 1</string>
+    <string name="navigation_dummy_item_2">Dummy item 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    android:background="#d7d6d5"
+    tools:context="nf.co.hoproject.genapp.BookingResultGeneric">
+
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <include layout="@layout/genric_toolbar"
+            android:elevation="10dp"
+
+            android:id="@+id/toolbar" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/ColorPrimary"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lll"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:typeface="serif"
+            android:textColor="#fff"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Order Placed"
+            android:gravity="center"
+            android:id="@+id/title" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/done"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:gravity="center"
+            android:text=""
+            android:typeface="sans"
+            android:textColor="#1a1a1c"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_weight="0.333"
+                android:layout_height="match_parent"
+                android:src="@drawable/shareo"
+                android:id="@+id/share" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_weight="0.333"
+                android:layout_height="match_parent"
+                android:src="@drawable/cancle"
+                android:id="@+id/cancel" />
+
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_weight="0.333"
+                android:layout_height="match_parent"
+                android:src="@drawable/map"
+                android:id="@+id/map" />
+
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+<ScrollView
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/linearLayout3"
+    android:layout_centerHorizontal="true"
+    android:layout_above="@+id/horizontalScrollView"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="Item"
+                    android:gravity="right"
+
+                    android:typeface="monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Event"
+                    android:gravity="left"
+                    android:typeface="monospace"
+                    android:id="@+id/item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="Recieved By"
+                    android:gravity="right"
+
+                    android:typeface="monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Event"
+                    android:gravity="left"
+                    android:typeface="monospace"
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="Total"
+                    android:gravity="right"
+
+                    android:typeface="monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Event"
+                    android:gravity="left"
+                    android:typeface="monospace"
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="Quantity"
+                    android:gravity="right"
+
+                    android:typeface="monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Event"
+                    android:gravity="left"
+                    android:typeface="monospace"
+                    android:id="@+id/quan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="Coins Rewarded"
+                    android:gravity="right"
+
+                    android:typeface="monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Event"
+                    android:gravity="left"
+                    android:typeface="monospace"
+                    android:id="@+id/reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="Chef"
+                    android:gravity="right"
+
+                    android:typeface="monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Event"
+                    android:gravity="left"
+                    android:typeface="monospace"
+                    android:id="@+id/chef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="Est. Delivery"
+                    android:gravity="right"
+
+                    android:typeface="monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Event"
+                    android:gravity="left"
+                    android:typeface="monospace"
+                    android:id="@+id/est"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

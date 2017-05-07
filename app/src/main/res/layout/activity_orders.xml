@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <!--<include layout="@layout/include_list_view" /> -->
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="#1a1a1c"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hm1"
+            android:layout_height="200dp"
+            android:id="@+id/flip"
+            android:visibility="gone">
+
+
+
+            </ImageView>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="72dp"
+        app:popupTheme="@style/ToolbarPopUp"
+        android:background="@color/colorAccent2"
+        app:theme="@style/CustomActionBar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+</RelativeLayout>
+         <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+         <!---   <GridView
+                android:layout_marginTop="5dp"
+                android:id="@+id/gridview"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+                -->
+
+            <ListView
+                android:id="@+id/gridview"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+    <include layout="@layout/include_navigation" />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

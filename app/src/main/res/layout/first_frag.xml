@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvFragFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="26dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/lamp"  />
+<ScrollView
+    android:layout_below="@+id/imageView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/linearLayout4">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/abouttext"  />
+</ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tvFragFirst"
+        android:layout_toEndOf="@+id/tvFragFirst"
+        android:id="@+id/linearLayout4">
+
+
+        <Button
+            android:layout_margin="2dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:background="@drawable/button_selector2"
+            android:id="@+id/menu" />
+
+        <Button
+            android:layout_weight="0.5"
+            android:layout_margin="2dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_selector2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:id="@+id/contact"  />
+
+
+    </LinearLayout>
+</RelativeLayout>
+

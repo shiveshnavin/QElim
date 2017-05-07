@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+
+    android:background="@color/colorAccent2"
+
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:background="@color/colorAccent2"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--  <include layout="@layout/include_list_view" /> -->
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="72dp"
+                app:popupTheme="@style/ToolbarPopUp"
+                app:theme="@style/CustomActionBar"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvFragFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="26dp"
+            android:text="TextView" />
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/icoo"  />
+        <ScrollView
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout4">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/abouttext"  />
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+    <include layout="@layout/include_navigation" />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

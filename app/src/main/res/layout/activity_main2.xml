@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+>
+
+
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <include layout="@layout/genric_toolbar"
+            android:elevation="10dp"
+
+            android:id="@+id/toolbar" />
+    </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="#1a1a1c"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flip"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="@drawable/roundedsel"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/cat">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Sub Category"
+                    android:layout_margin="10dp"
+
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/categoryname" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/arrow_down"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:background="#292b2d"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<nf.co.hoproject.genapp.ExpandableHeightListView
+    android:scrollbars="none"
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></nf.co.hoproject.genapp.ExpandableHeightListView>
+
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

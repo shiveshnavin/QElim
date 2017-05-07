@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--  <include layout="@layout/include_list_view" /> -->
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="72dp"
+                app:popupTheme="@style/ToolbarPopUp"
+                app:theme="@style/CustomActionBar"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/lamp"  />
+        </RelativeLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!---   <GridView
+                   android:layout_marginTop="5dp"
+                   android:id="@+id/gridview"
+                   android:layout_marginLeft="2dp"
+                   android:layout_marginRight="2dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="450dp"
+                   android:horizontalSpacing="5dp"
+                   android:numColumns="auto_fit"
+                   android:stretchMode="columnWidth"
+                   android:verticalSpacing="5dp" />
+                   -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/grey2"
+
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <customfonts.MyEditText
+
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name"
+                        android:textSize="15dp"
+                        android:maxLength="20"
+                        android:id="@+id/name" />
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <customfonts.MyEditText
+
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile Number"
+                        android:textSize="15dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:id="@+id/mobile" />
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ccc"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <customfonts.MyEditText
+
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="No of People"
+                        android:inputType="number"
+                        android:textColorHint="@color/white"
+                        android:textSize="15dp"
+                        android:id="@+id/nop" />
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/red"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/date"
+                    android:text="Pick Date"
+                    android:background="@drawable/button_selector2"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"/>
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_selector2"
+                    android:textColor="@color/white"
+                    android:text="Pick Time"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="1dp"
+                    android:background="@color/red"/>
+                <ru.katso.livebutton.LiveButton
+                    android:layout_marginTop="40dp"
+                    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/book"
+                    android:layout_gravity="center"
+                    android:text="Book"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    livebutton:corners="4dp"
+                    livebutton:normalHeight="6dp"
+                    livebutton:pressedHeight="2dp"
+                    livebutton:backgroundColor="#F57F76"
+                    livebutton:shadowColor="#b16262"/>
+
+
+
+            </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <include layout="@layout/include_navigation" />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
